@@ -12,6 +12,10 @@
 
     <link rel="stylesheet" href="my.css">
     <title>Resume Website</title>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
 </head>
 
 <body>
@@ -25,7 +29,7 @@
         </div>
         <div class="scroll-btn">
             <div class="scroll-bar">
-                <a href=""><span></span></a>
+                <a href="#about"><span></span></a>
             </div>
         </div>
     </section>
@@ -33,16 +37,19 @@
         <div class="nav-bar">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="#top">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Me</a>
+                    <a class="nav-link" href="#about">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Resume</a>
+                    <a class="nav-link" href="#resume">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Me</a>
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Me</a>
                 </li>
             </ul>
         </div>
@@ -82,6 +89,19 @@
                     </div>
                 </div>
 
+                <div class="social-media">
+                    <ul>
+                        <a href="#">
+                            <li><i class="fas fa-linkedin"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fas fa-facebook"></i></li>
+                        </a>
+                        <a href="#">
+                            <li><i class="fas fa-github"></i></li>
+                        </a>
+                    </ul>
+                </div>
 
 
 
@@ -157,7 +177,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="services-box">
-                                    <i class="fas fa-rocket"></i><span>Graphics</span>
+                                    <i class="fa fa-rocket"></i><span>Graphics</span>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque tempore ducimus
                                         architecto animi ratione corrupti eum, doloremque nam rerum veniam, quisquam
                                         ipsa illum nihil?</p>
@@ -166,7 +186,7 @@
 
                             <div class="col-md-4">
                                 <div class="services-box">
-                                    <i class="fas fa-camera"></i><span>Videos</span>
+                                    <i class="fa fa-camera"></i><span>Videos</span>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque tempore ducimus
                                         architecto animi ratione corrupti eum, doloremque nam rerum veniam, quisquam
                                         ipsa illum nihil?</p>
@@ -175,7 +195,7 @@
 
                             <div class="col-md-4">
                                 <div class="services-box">
-                                    <i class="fas fa-laptop"></i><span>Web Development</span>
+                                    <i class="fa fa-laptop"></i><span>Web Development</span>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque tempore ducimus
                                         architecto animi ratione corrupti eum, doloremque nam rerum veniam, quisquam
                                         ipsa illum nihil?</p>
@@ -194,29 +214,38 @@
 
                         <div class="row">
                             <div class="col-md-4">
-                                <i class="fas fa-phone"></i>
+                                <i class="fa fa-phone"></i>
                                 <p>+91 7559000511</p>
                             </div>
                             <div class="col-md-4">
-                                <i class="fas fa-phone"></i>
+                                <i class="fa fa-phone"></i>
                                 <p>+91 8207004556</p>
                             </div>
 
                             <div class="col-md-4">
-                                <i class="fas fa-envelop"></i>
+                                <i class="fa fa-envelop"></i>
                                 <p>kisanudey886@gmail.com</p>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-primary"><i class="fas fa-download"></i>Resume</button>
-                        <button type="button" class="btn btn-primary"><i class="fas fa-rocket"></i>Hire Me</button>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-download"></i>Resume</button>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-rocket"></i>Hire Me</button>
                     </div>
 
                     <div class="footer text-center">
-                        <p>Made with<i class="fas fa-heart-o"></i> by Krisanu Dey</p>
+                        <p>Made with<i class="fa fa-heart-o"></i> by Krisanu Dey</p>
                     </div>
                 </div>
 
     </section>
+
+    <!-- Smooth-scroll -->
+
+
+    <script src="smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

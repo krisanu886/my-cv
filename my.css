@@ -49,14 +49,14 @@ body{
     animation: mover 1s infinite alternate;
 }
 @keyframes mover{
-    0%{transform: translatey(0);}
-    100%{transform: translatey(10px); }
+    0%{transform: translateY(0);}
+    100%{transform: translateY(10px); }
    
 }
 
 .about{
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: -130px;
 }
 .profile-img{
     height: 400px;
@@ -82,6 +82,7 @@ body{
     background:black ;
 }
 .resume{
+    margin-top: -50px;
     padding-top: 50px;
     padding-bottom: 30px;
     background: #eeece7;
@@ -178,10 +179,11 @@ body{
 }
 .contact{
     padding-top: 50px;
-    background: rgb(221, 205, 205);
+    background: rgb(163, 113, 113);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    color: #fff;
 }
 .contact .row{
     padding: 30px 0;
@@ -199,5 +201,49 @@ body{
     background: transparent;
 }
 .contact .btn:focus{
-    
+    box-shadow: none !important;
+}
+.contact .btn:hover{
+    border: 2px solid black !important;
+    border-radius: 20px;
+    background: black !important;
+    transition: 0.5s;
+}
+.contact .btn .fa{
+    margin-right: 10px;
+}
+.footer{
+    background: black;
+    height: 50px;
+    margin-top: 50px;
+    color: white;
+    padding-top: 10px;
+}
+fa-heart-o{
+    color: red;
+}
+.social-media{
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 80px;
+}
+.social-media ul{
+    padding: initial;
+}
+.social-media ul li{
+    height: 40px;
+    width: 40px;
+    list-style-type: none;
+    padding-left: 12px;
+    padding-top: 6px;
+    margin-top: 5px;
+    color: white;
+    background: black;
+}
+.social-media ul li:hover{
+    padding-left: 35px;
+    width: 80px;
+    transition: 1s;
 }
