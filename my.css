@@ -240,7 +240,7 @@ fa-heart-o{
     padding-top: 6px;
     margin-top: 5px;
     color: white;
-    background: black;
+    background: rgb(0, 0, 0);
 }
 .social-media ul li:hover{
     padding-left: 35px;
